@@ -1,0 +1,24 @@
+{
+  "name": "jwt-utils",
+  "version": "0.0.0",
+  "description": "Command line utilities for working with JSON Web Tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarketm/jwt-utils.git"
+  },
+  "keywords": [
+    "jwt",
+    "jsonwebtoken",
+    "cli"
+  ],
+  "author": "Travis Clarke <travis.m.clarke@gmail.com> (https://www.travismclarke.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clarketm/jwt-utils/issues"
+  },
+  "homepage": "https://github.com/clarketm/jwt-utils#readme"
+}
