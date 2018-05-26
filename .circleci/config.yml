@@ -1,0 +1,28 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.1
+
+    working_directory: ~/jwt-utils
+
+    environment:
+      - NODE_ENV: development
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - dependencies-{{ checksum "yarn.lock" }}
+
+      - run: yarn --frozen-lockfile
+      - run: yarn bootstrap
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: dependencies-{{ checksum "yarn.lock" }}
+
+      - run: yarn test

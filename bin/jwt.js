@@ -19,7 +19,7 @@ commander
   .description("Create/Sign a new JWT")
   .option("-a, --algorithm [algorithm]", "Identifies the cryptographic algorithm used to secure the JWT.", algorithmsRegex, "HS256")
   .option("-d, --audience [audience]", "Identifies the recipient(s) that the JWT is intended for.")
-  .option("-e, --expiresIn [time]", "Identifies the expiration time on or after which the JWT must not be accepted for processing.", "1h") // 1000 * 60 * 60
+  .option("-e, --expiresIn [time]", "Identifies the expiration time on or after which the JWT must not be accepted for processing.", "1 hour")
   .option("-h, --header [header]", "Header for JWT.")
   .option("-i, --issuer [issuer]", "Identifies principal that issued the JWT.")
   .option("-k, --keyid [keyid]", "A hint indicating which key was used to secure the JWS.")
@@ -32,7 +32,7 @@ commander
 commander
   .command("verify [token] [secret]")
   .description("Verify a JWT")
-  .option("-a, --algorithm [algorithm]", "Identifies the cryptographic algorithm used to secure the JWT.", algorithmsRegex, "HS256")
+  .option("-a, --algorithms [algorithms]", "Identifies the cryptographic algorithm used to secure the JWT.")
   .option("-d, --audience [audience]", "Identifies the recipient(s) that the JWT is intended for.")
   .option("-t, --clockTimestamp [seconds]", "The time in seconds that should be used as the current time for all comparisons.")
   .option("-c, --clockTolerance [seconds]", "The number of seconds to tolerate when checking the nbf and exp claims.")
