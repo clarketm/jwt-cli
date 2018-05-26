@@ -20,9 +20,6 @@ npm install "@clarketm/jwt-utils" --save
 
 ### `sign [options] payload secret`
 
-> Note: the `sign` subcommand accepts **all** options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtsignpayload-secretorprivatekey-options-callback)
-> with the exception of `mutatePayload` which is not applicable.
-
 ```shell
 $ jwt sign '{"user": "Travis Clarke"}' "super secret"
 ```
@@ -33,9 +30,11 @@ copied to clipboard:
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJpYXQiOjE1MjczMTI3NTIsImV4cCI6MTUyNzMxNjM1Mn0.2l4wyaoxNBBY7nvm6sAqAcmXSuuKjBubNo_h42hcigU
 ```
 
+> Note: the `sign` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtsignpayload-secretorprivatekey-options-callback) with the exception of `mutatePayload` which is not applicable.
+
 ### `verify [options] token secret`
 
-> Note: the `verify` subcommand accepts **all** options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)
+> Note: the `verify` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)
 
 ```shell
 $ jwt verify "eyJhbGciOiJIUzI1..." "super secret"
@@ -46,9 +45,6 @@ valid!
 ```
 
 ### `decode [options] token`
-
-> Note: the `decode` subcommand accepts **all** options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)
-> with the exception of `json` which is not applicable.
 
 ```shell
 $ jwt decode "eyJhbGciOiJIUzI1..."
@@ -61,6 +57,8 @@ a:   1
 iat: 1527312832
 exp: 1527316432
 ```
+
+> Note: the `decode` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback) with the exception of `json` which is not applicable.
 
 ## Related
 
