@@ -34,8 +34,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJpYXQiOjE1MjczMTI3NTIsImV4cCI6MTU
 
 ### `verify [options] token secret`
 
-> Note: the `verify` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)
-
 ```shell
 $ jwt verify "eyJhbGciOiJIUzI1..." "super secret"
 ```
@@ -43,6 +41,8 @@ $ jwt verify "eyJhbGciOiJIUzI1..." "super secret"
 ```
 valid!
 ```
+
+> Note: the `verify` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback)
 
 ### `decode [options] token`
 
