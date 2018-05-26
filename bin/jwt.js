@@ -6,7 +6,7 @@ const commander = require("commander");
 const { version } = require("../package.json");
 const { sign, verify, decode, algorithmsRegex } = require("../lib/jwt");
 const { error } = console;
-const { exit } = process;
+const { exit, argv } = process;
 
 commander.version(version).on("command:*", () => {
   error(`Invalid command: ${commander.args.join(" ")}\nSee --help for a list of available commands.`);
@@ -59,4 +59,8 @@ commander
 //   .option('-l, --list', 'List scopes of JWT.')
 //   .option('-v, --verify [scopes]', 'Scope(s) to verify against JWT.')
 
-commander.parse(process.argv);
+commander.parse(argv);
+
+if (!argv.slice(2).length) {
+  commander.outputHelp(help => help);
+}
