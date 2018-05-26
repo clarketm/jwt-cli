@@ -2,9 +2,25 @@
   "name": "jwt-utils",
   "version": "0.0.0",
   "description": "Command line utilities for working with JSON Web Tokens",
-  "main": "index.js",
+  "main": "./lib/jwt.js",
+  "bin": {
+    "jwt": "./bin/jwt.js"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier --write '**/*.{js,json,css,md}'",
+    "lint": "eslint --fix ./bin ./lib",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
   },
   "repository": {
     "type": "git",
@@ -13,12 +29,37 @@
   "keywords": [
     "jwt",
     "jsonwebtoken",
-    "cli"
+    "cli",
+    "command-line",
+    "command line",
+    "cl",
+    "terminal",
+    "node"
   ],
   "author": "Travis Clarke <travis.m.clarke@gmail.com> (https://www.travismclarke.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/clarketm/jwt-utils/issues"
   },
-  "homepage": "https://github.com/clarketm/jwt-utils#readme"
+  "homepage": "https://github.com/clarketm/jwt-utils#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "husky": "^1.0.0-rc.7",
+    "jest": "^23.0.0",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.12.1",
+    "shx": "^0.2.2"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clipboardy": "^1.2.3",
+    "commander": "^2.15.1",
+    "jsonwebtoken": "^8.2.1",
+    "minimist": "^1.2.0",
+    "prettyjson": "^1.2.1"
+  }
 }
