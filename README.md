@@ -7,13 +7,13 @@ Command line utilities for working with JSON Web Tokens (JWT).
 ### Yarn
 
 ```shell
-yarn add "@clarketm/jwt-utils"
+yarn global add "@clarketm/jwt-utils"
 ```
 
 ### Npm
 
 ```shell
-npm install "@clarketm/jwt-utils" --save
+npm install --global "@clarketm/jwt-utils"
 ```
 
 ## Usage
