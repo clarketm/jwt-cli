@@ -2,6 +2,9 @@
   "name": "@clarketm/jwt-utils",
   "version": "0.0.1",
   "description": "Command line utilities for working with JSON Web Tokens",
+  "engines": {
+    "node": ">=8.11.2"
+  },
   "main": "./lib/jwt.js",
   "bin": {
     "jwt": "./bin/jwt.js"
@@ -19,6 +22,7 @@
   "scripts": {
     "prettier": "prettier --write '**/*.{js,json,css,md}'",
     "lint": "eslint --fix ./bin ./lib",
+    "prep": "yarn lint && yarn prettier && yarn test",
     "test": "jest",
     "test:watch": "yarn test --watch"
   },

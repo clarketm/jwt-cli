@@ -15,8 +15,8 @@ commander.version(version).on("command:*", () => {
 
 commander
   .command("sign [payload] [secret]")
-  .alias("create")
-  .description("Create/Sign a new JWT")
+  // .alias("create")
+  .description("Sign a new JWT")
   .option("-a, --algorithm [algorithm]", "Identifies the cryptographic algorithm used to secure the JWT.", algorithmsRegex, "HS256")
   .option("-d, --audience [audience]", "Identifies the recipient(s) that the JWT is intended for.")
   .option("-e, --expiresIn [time]", "Identifies the expiration time on or after which the JWT must not be accepted for processing.", "1 hour")
