@@ -1,6 +1,6 @@
 {
-  "name": "jwt-utils",
-  "version": "0.0.0",
+  "name": "@clarketm/jwt-utils",
+  "version": "0.0.1",
   "description": "Command line utilities for working with JSON Web Tokens",
   "main": "./lib/jwt.js",
   "bin": {
@@ -53,27 +53,24 @@
     "url": "https://github.com/clarketm/jwt-utils/issues"
   },
   "homepage": "https://github.com/clarketm/jwt-utils#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clipboardy": "^1.2.3",
+    "commander": "^2.15.1",
+    "jsonwebtoken": "^8.2.1",
+    "prettyjson": "^1.2.1"
+  },
   "devDependencies": {
     "@types/jest": "^22.2.3",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.2.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
+    "@types/shelljs": "^0.8.0",
     "eslint": "^4.19.1",
     "husky": "^1.0.0-rc.7",
     "jest": "^23.0.0",
     "lint-staged": "^7.1.2",
     "prettier": "^1.12.1",
-    "shelljs": "^0.8.2",
-    "shx": "^0.2.2"
-  },
-  "dependencies": {
-    "@types/shelljs": "^0.8.0",
-    "chalk": "^2.4.1",
-    "clipboardy": "^1.2.3",
-    "commander": "^2.15.1",
-    "jsonwebtoken": "^8.2.1",
-    "minimist": "^1.2.0",
-    "prettyjson": "^1.2.1"
+    "shelljs": "^0.8.2"
   }
 }
