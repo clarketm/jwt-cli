@@ -1,5 +1,9 @@
 # jwt-utils
 
+![GitHub release](https://img.shields.io/github/release/clarketm/jwt-utils.svg)
+![Build Status](https://circleci.com/gh/clarketm/jwt-utils.svg?style=shield&circle-token=51853e44a4aff2fef83b0b89407ed15288bd641c)
+![License](https://img.shields.io/npm/l/@clarketm/jwt-utils.svg)
+
 Command line utilities for working with JSON Web Tokens (JWT).
 
 ## Installation
