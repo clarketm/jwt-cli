@@ -1,6 +1,6 @@
 # jwt-utils
 
-JSON Web Tokens (JWT) command-line utilities.
+Command line utilities for working with JSON Web Tokens (JWT).
 
 ## Installation
 
