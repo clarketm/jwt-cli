@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+"use strict";
+
 const commander = require("commander");
 const { version } = require("../package.json");
 const { sign, verify, decode, algorithmsRegex } = require("../lib/jwt");
