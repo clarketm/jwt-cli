@@ -7,6 +7,8 @@
 
 ## Tests
 
+> Fix: CI clipboard issue
+
 * `clockTimestamp`
 * `clockTolerance`
 * `ignoreExpiration`
