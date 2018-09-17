@@ -26,6 +26,10 @@ yarn global add "@clarketm/jwt-utils"
 npm install --global "@clarketm/jwt-utils"
 ```
 
+## Demo
+
+![usage demo](/usage.gif)
+
 ## Usage
 
 ### `sign [options] payload secret`
