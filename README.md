@@ -1,4 +1,4 @@
-# jwt-utils
+# [jwt-utils](https://blog.travismclarke.com/project/jwt-utils/)
 
 [![NPM release](https://img.shields.io/npm/v/@clarketm/jwt-utils.svg)](https://www.npmjs.com/package/@clarketm/jwt-utils)
 [![Build Status](https://circleci.com/gh/clarketm/jwt-utils.svg?style=shield)](https://circleci.com/gh/clarketm/jwt-utils)
@@ -8,7 +8,7 @@ Command line utilities for working with JSON Web Tokens (JWT).
 
 <br>
 <br>
-<a href="https://github.com/clarketm/jwt-utils">
+<a href="https://blog.travismclarke.com/project/jwt-utils/">
   <p align="center"><img width="40%" src="/hero.png" /></p>
 </a>
 
