@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: circleci/node:10.1
 
-    working_directory: ~/jwt-utils
+    working_directory: ~/jwt-cli
 
     environment:
       - NODE_ENV: development

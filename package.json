@@ -1,5 +1,5 @@
 {
-  "name": "@clarketm/jwt-utils",
+  "name": "@clarketm/jwt-cli",
   "version": "1.0.0",
   "description": "Command line utilities for working with JSON Web Tokens (JWT)",
   "engines": {
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clarketm/jwt-utils.git"
+    "url": "git+https://github.com/clarketm/jwt-cli.git"
   },
   "keywords": [
     "jwt",
@@ -54,9 +54,9 @@
   "author": "Travis Clarke <travis.m.clarke@gmail.com> (https://www.travismclarke.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clarketm/jwt-utils/issues"
+    "url": "https://github.com/clarketm/jwt-cli/issues"
   },
-  "homepage": "https://github.com/clarketm/jwt-utils#readme",
+  "homepage": "https://github.com/clarketm/jwt-cli#readme",
   "publishConfig": {
     "access": "public"
   },

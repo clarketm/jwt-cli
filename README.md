@@ -1,14 +1,14 @@
-# [jwt-utils](https://blog.travismclarke.com/project/jwt-utils/)
+# [jwt-cli](https://blog.travismclarke.com/project/jwt-cli/)
 
-[![NPM release](https://img.shields.io/npm/v/@clarketm/jwt-utils.svg)](https://www.npmjs.com/package/@clarketm/jwt-utils)
-[![Build Status](https://circleci.com/gh/clarketm/jwt-utils.svg?style=shield)](https://circleci.com/gh/clarketm/jwt-utils)
-[![License](https://img.shields.io/npm/l/@clarketm/jwt-utils.svg)](LICENSE.md)
+[![NPM release](https://img.shields.io/npm/v/@clarketm/jwt-cli.svg)](https://www.npmjs.com/package/@clarketm/jwt-cli)
+[![Build Status](https://circleci.com/gh/clarketm/jwt-cli.svg?style=shield)](https://circleci.com/gh/clarketm/jwt-cli)
+[![License](https://img.shields.io/npm/l/@clarketm/jwt-cli.svg)](LICENSE.md)
 
 Command line utilities for working with JSON Web Tokens (JWT).
 
 <br>
 <br>
-<a href="https://blog.travismclarke.com/project/jwt-utils/">
+<a href="https://blog.travismclarke.com/project/jwt-cli/">
   <p align="center"><img width="40%" src="/hero.png" /></p>
 </a>
 
@@ -17,13 +17,13 @@ Command line utilities for working with JSON Web Tokens (JWT).
 ### Yarn
 
 ```shell
-yarn global add "@clarketm/jwt-utils"
+yarn global add "@clarketm/jwt-cli"
 ```
 
 ### Npm
 
 ```shell
-npm install --global "@clarketm/jwt-utils"
+npm install --global "@clarketm/jwt-cli"
 ```
 
 ## Demo
