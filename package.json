@@ -1,6 +1,6 @@
 {
   "name": "@clarketm/jwt-utils",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Command line utilities for working with JSON Web Tokens (JWT)",
   "engines": {
     "node": ">=8.11.2"
@@ -64,8 +64,7 @@
     "chalk": "^2.4.1",
     "clipboardy": "^1.2.3",
     "commander": "^2.15.1",
-    "jsonwebtoken": "^8.2.1",
-    "prettyjson": "^1.2.1"
+    "jsonwebtoken": "^8.2.1"
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
