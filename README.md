@@ -8,8 +8,8 @@ Command line utilities for working with JSON Web Tokens (JWT).
 
 <br>
 <br>
-<a href="https://blog.travismclarke.com/project/jwt-cli/">
-  <p align="center"><img width="40%" src="/hero.png" /></p>
+<a href="https://blog.travismclarke.com/project/jwt-utils/">
+  <p align="center"><img width="40%" src="https://github.com/clarketm/jwt-cli/blob/master/hero.png" /></p>
 </a>
 
 ## Installation
@@ -28,7 +28,7 @@ npm install --global "@clarketm/jwt-cli"
 
 ## Demo
 
-![usage demo](/usage.gif)
+![usage demo](https://github.com/clarketm/jwt-cli/blob/master/usage.gif)
 
 ## Usage
 
