@@ -67,9 +67,11 @@ $ jwt decode "eyJhbGciOiJIUzI1..."
 ```shell
 copied to clipboard:
 
-a:   1
-iat: 1527312832
-exp: 1527316432
+{
+  user: 'Travis Clarke',
+  iat: 1537507542,
+  exp: 1537511142
+}
 ```
 
 > Note: the `decode` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback) with the exception of `json` which is not applicable.
