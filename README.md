@@ -1,7 +1,6 @@
 # [jwt-cli](https://blog.travismclarke.com/project/jwt-cli/)
 
 [![NPM release](https://img.shields.io/npm/v/@clarketm/jwt-cli.svg)](https://www.npmjs.com/package/@clarketm/jwt-cli)
-[![Build Status](https://circleci.com/gh/clarketm/jwt-cli.svg?style=shield)](https://circleci.com/gh/clarketm/jwt-cli)
 [![License](https://img.shields.io/npm/l/@clarketm/jwt-cli.svg)](LICENSE.md)
 
 Command line tool for working with JSON Web Tokens (JWT).
