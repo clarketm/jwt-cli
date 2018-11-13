@@ -119,6 +119,17 @@ describe("jwt", () => {
       expect(payloadParsed.payload.aud).toBe(audience);
     });
 
+    it("should not copy to clipboard if --noCopy option is present", done => {
+      const payload = JSON.stringify({ a: 1 });
+      const secret = "super secret";
+      shell.exec(`node ./bin/jwt.js sign '${payload}' '${secret}' --noCopy`, (code, stdout) => {
+        const clipboardToken = clipboard.readSync();
+        expect(clipboardToken).not.toBe(stdout);
+        expect(stdout.indexOf("clipboard")).toBe(-1);
+        done();
+      });
+    });
+
     it("should fail if `audience` value is not specified", () => {
       let payload = JSON.stringify({ a: 1 });
       let secret = "super secret";
