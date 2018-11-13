@@ -27,7 +27,7 @@ commander
   .option("-t, --noTimestamp", "The generated JWT will not include an iat.")
   .option("-j, --jwtid [jwtid]", "Case sensitive unique identifier")
   .option("-s, --subject [subject]", "Identifies the subject of the JWT.")
-  .option("-n, --noCopy", "Don't copy the token to your clipboard.")
+  .option("-n, --noCopy", "Do not copy the token to the clipboard.")
   .action(sign);
 
 commander
@@ -48,7 +48,7 @@ commander
   .command("decode [token]")
   .description("Decode a JWT")
   .option("-c, --complete", "Return header, payload, and signature.")
-  .option("-n, --noCopy", "Don't copy the token to your clipboard.")
+  .option("-n, --noCopy", "Do not copy the payload to the clipboard.")
   .action(decode);
 
 // TODO
