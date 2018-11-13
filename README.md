@@ -45,6 +45,10 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJpYXQiOjE1MjczMTI3NTIsImV4cCI6MTU
 
 > Note: the `sign` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtsignpayload-secretorprivatekey-options-callback) with the exception of `mutatePayload` which is not applicable.
 
+| Option       | Description                             |
+| ------------ | --------------------------------------- |
+| -n, --noCopy | Don't copy the token to your clipboard. |
+
 ### `verify [options] token secret`
 
 ```shell
@@ -74,6 +78,10 @@ copied to clipboard:
 ```
 
 > Note: the `decode` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback) with the exception of `json` which is not applicable.
+
+| Option       | Description                             |
+| ------------ | --------------------------------------- |
+| -n, --noCopy | Don't copy the token to your clipboard. |
 
 ## Related
 
