@@ -48,6 +48,7 @@ commander
   .command("decode [token]")
   .description("Decode a JWT")
   .option("-c, --complete", "Return header, payload, and signature.")
+  .option("-n, --noCopy", "Don't copy the token to your clipboard.")
   .action(decode);
 
 // TODO

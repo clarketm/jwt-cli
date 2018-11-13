@@ -526,8 +526,6 @@ describe("jwt", () => {
       shell.exec(`node ./bin/jwt.js decode '${token}'`);
       let payloadParsed = JSON.parse(clipboard.readSync());
 
-      console.log(payloadParsed);
-
       expect(payloadParsed.a).toBe(1);
     });
 
@@ -581,6 +579,21 @@ describe("jwt", () => {
       let payloadParsed = JSON.parse(clipboard.readSync());
 
       expect(payloadParsed.signature).toBeUndefined();
+    });
+
+    it("should not copy to clipboard if --noCopy option is present", done => {
+      const payload = JSON.stringify({ a: 1 });
+      const secret = "super secret";
+      shell.exec(`node ./bin/jwt.js sign '${payload}' '${secret}' --noCopy`, (code, stdout) => {
+        const clipboardToken = clipboard.readSync();
+        // Match token on anything with two dots between that doesn't start with a whitespace
+        var tokenFromStdout = stdout.match(/(\S.*\..*\.*)/g)[0];
+
+        expect(clipboardToken).not.toBe(tokenFromStdout);
+        // Fallback test where we just check if the copied to clipboard line is not being written to stdout
+        expect(stdout.indexOf("clipboard")).toBe(-1);
+        done();
+      });
     });
   });
 });
