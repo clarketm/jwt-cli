@@ -27,6 +27,7 @@ commander
   .option("-t, --noTimestamp", "The generated JWT will not include an iat.")
   .option("-j, --jwtid [jwtid]", "Case sensitive unique identifier")
   .option("-s, --subject [subject]", "Identifies the subject of the JWT.")
+  .option("-n, --noCopy", "Don't copy the token to your clipboard.")
   .action(sign);
 
 commander
