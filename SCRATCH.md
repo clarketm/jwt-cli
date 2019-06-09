@@ -2,14 +2,14 @@
 
 ## Methods
 
-* `refresh`
-* `scope`
+- `refresh`
+- `scope`
 
 ## Tests
 
 > Fix: CI clipboard issue
 
-* `clockTimestamp`
-* `clockTolerance`
-* `ignoreExpiration`
-* `ignoreNotBefore`
+- `clockTimestamp`
+- `clockTolerance`
+- `ignoreExpiration`
+- `ignoreNotBefore`

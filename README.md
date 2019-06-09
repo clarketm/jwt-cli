@@ -45,8 +45,8 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJpYXQiOjE1MjczMTI3NTIsImV4cCI6MTU
 
 > Note: the `sign` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtsignpayload-secretorprivatekey-options-callback) with the exception of `mutatePayload` which is not applicable.
 
-| Option         | Description                              |
-| -------------- | ---------------------------------------- |
+| Option         | Description                             |
+| -------------- | --------------------------------------- |
 | `-n, --noCopy` | Do not copy the token to the clipboard. |
 
 ### `verify [options] token secret`
@@ -79,13 +79,13 @@ copied to clipboard:
 
 > Note: the `decode` subcommand accepts **all** the same options as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback) with the exception of `json` which is not applicable.
 
-| Option         | Description                                |
-| -------------- | ------------------------------------------ |
+| Option         | Description                               |
+| -------------- | ----------------------------------------- |
 | `-n, --noCopy` | Do not copy the payload to the clipboard. |
 
 ## Related
 
-* [node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) – JsonWebToken implementation for node.js
+- [node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) – JsonWebToken implementation for node.js
 
 ## License
 

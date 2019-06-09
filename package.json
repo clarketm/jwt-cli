@@ -1,6 +1,6 @@
 {
   "name": "@clarketm/jwt-cli",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Command line tool for working with JSON Web Tokens (JWT)",
   "engines": {
     "node": ">=8.11.2"
