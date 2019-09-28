@@ -31,6 +31,8 @@ npm install --global "@clarketm/jwt-cli"
 
 ## Usage
 
+---
+
 ### `sign [options] payload secret`
 
 ```shell
@@ -49,6 +51,8 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJpYXQiOjE1MjczMTI3NTIsImV4cCI6MTU
 | -------------- | --------------------------------------- |
 | `-n, --noCopy` | Do not copy the token to the clipboard. |
 
+---
+
 ### `verify [options] token secret`
 
 ```shell
@@ -60,6 +64,8 @@ valid!
 ```
 
 > Note: the `verify` subcommand accepts **all** the same [**options**](https://github.com/auth0/node-jsonwebtoken#jwtverifytoken-secretorpublickey-options-callback) as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken)
+
+---
 
 ### `decode [options] token`
 
@@ -82,6 +88,8 @@ copied to clipboard:
 | Option         | Description                               |
 | -------------- | ----------------------------------------- |
 | `-n, --noCopy` | Do not copy the payload to the clipboard. |
+
+---
 
 ## Related
 
