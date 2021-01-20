@@ -27,6 +27,7 @@ commander
   .option("-t, --noTimestamp", "The generated JWT will not include an iat.")
   .option("-j, --jwtid [jwtid]", "Case sensitive unique identifier")
   .option("-s, --subject [subject]", "Identifies the subject of the JWT.")
+  .option("-p, --passphrase [passphrase]", "The passphrase for your secret key.")
   .option("-n, --noCopy", "Do not copy the token to the clipboard.")
   .action(sign);
 
@@ -42,6 +43,7 @@ commander
   .option("-i, --issuer [issuer]", "Identifies principal that issued the JWT.")
   .option("-m, --maxAge [time]", "The maximum allowed age for tokens to still be valid.")
   .option("-s, --subject [subject]", "Identifies the subject of the JWT.")
+  .option("-p, --passphrase [passphrase]", "The passphrase for your secret key.")
   .action(verify);
 
 commander
