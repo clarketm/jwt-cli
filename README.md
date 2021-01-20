@@ -47,9 +47,10 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoxLCJpYXQiOjE1MjczMTI3NTIsImV4cCI6MTU
 
 > Note: the `sign` subcommand accepts **all** the same [**options**](https://github.com/auth0/node-jsonwebtoken#jwtsignpayload-secretorprivatekey-options-callback) as [`auth0/node-jsonwebtoken`](https://github.com/auth0/node-jsonwebtoken) with the exception of `mutatePayload` which is not applicable.
 
-| Option         | Description                             |
-| -------------- | --------------------------------------- |
-| `-n, --noCopy` | Do not copy the token to the clipboard. |
+| Option             | Description                                         |
+| ------------------ | --------------------------------------------------- |
+| `-n, --noCopy`     | Do not copy the token to the clipboard.             |
+| `-p, --passphrase` | The passphrase for your secret (if it is encrypted) |
 
 ---
 
