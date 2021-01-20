@@ -60,6 +60,21 @@ describe("jwt", () => {
       expect(payloadParsed.header.alg).toBe(algorithm);
     });
 
+    it("should set algorithm to `RS256` and sign with a private encypted key", () => {
+      let algorithm = "RS256";
+
+      let payload = JSON.stringify({ a: 1 });
+      let cert = fs.readFileSync("./test/cert/rs256_encrypted.key");
+
+      shell.exec(`node ./bin/jwt.js sign --algorithm '${algorithm}' --passphrase 'password' -- '${payload}' '${cert}'`);
+      let token = clipboard.readSync();
+
+      shell.exec(`node ./bin/jwt.js decode '${token}' --complete`);
+      let payloadParsed = JSON.parse(clipboard.readSync());
+
+      expect(payloadParsed.header.alg).toBe(algorithm);
+    });
+
     it("should set algorithm to `ES256` and sign with a private key", () => {
       let algorithm = "ES256";
 
