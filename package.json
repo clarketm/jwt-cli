@@ -64,7 +64,7 @@
     "chalk": "^2.4.1",
     "clipboardy": "^1.2.3",
     "commander": "^2.15.1",
-    "jsonwebtoken": "^8.2.1"
+    "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
